@@ -1,2 +1,2 @@
 # ExerciciosC
-Exercicios realizados em sala na linguagem C.
+Exercicios realizados em sala no CodeBlocks na linguagem C.
