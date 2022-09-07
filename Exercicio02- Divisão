@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main()
+{
+    setlocale(LC_ALL,"");
+    int dividendo, divisor, quociente;
+
+    divisor = "5";
+
+    //dividendo = divisor * quociente;
+
+    printf("Digite o número que você quer ver a divisão:");
+    scanf("%d", &divisor);
+
+    for(quociente = 1; quociente <= 10; quociente++)
+    {
+        dividendo = divisor * quociente;
+        printf("%d / %d = %d\n",dividendo, divisor, quociente);
+
+    }
+
+    return 0;
+}
