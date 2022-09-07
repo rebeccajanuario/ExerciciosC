@@ -1,0 +1,47 @@
+//Programa de escolha com switch case
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main()
+{
+    int opcao;
+    float resultado, num1, num2;
+    setlocale(LC_ALL,"");
+
+    printf("Operações aritmeticas \n");
+    printf(" 1- Adição\n");
+    printf(" 2- Subtração\n");
+
+    printf("Escolha uma opção :\n");
+    scanf("%d", &opcao);
+    switch( opcao )
+    {
+        case 1:
+            system("cls");
+            printf("1 - Adição.\n");
+            printf("Digite os valores\n");
+            scanf("%f %f", &num1, num2 );
+
+            resultado = num1+ num2;
+
+            printf("Resultado: %.2f", resultado);
+            system("pause");
+            break;
+         case 2:
+            system("cls");
+            printf("2 - Subtração.\n");
+            printf("Digite os valores\n");
+            scanf("%f %f", &num1, num2 );
+
+            resultado = num1 - num2;
+
+            printf("Resultado: %.2f", resultado);
+            system("pause");
+            break;
+
+         default:
+            system("cls");
+            printf("Nao é uma opção valida!\n");
+    }
+    return 0;
+}
