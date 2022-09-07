@@ -1,0 +1,28 @@
+//Programa que calcula a media com contador 
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+int main()
+{
+    setlocale(LC_ALL, "");
+
+    int quantidade;
+    int contador;
+    float numero, media, soma;
+
+    printf("Digite o total de números: ");
+    scanf("%d", &quantidade);
+
+    soma = 0;
+    for(contador = 1; contador<= quantidade; contador++){
+        printf("Digite um número: ");
+        scanf("%f", &numero);
+
+        soma += numero;
+    }
+
+    media = soma / quantidade;
+    printf("\nMédia: %.2f\n", media);
+
+    return 0;
+}
