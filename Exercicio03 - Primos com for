@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL,"");
+
+    // Crie um programa que leia um número inteiro positivo e informe se o número é primo ou não. Utilize o laço de derepetição for.
+    // Dicas
+    // Um número é primo se ele tem exatamente dois divisores 1 e ele mesmo;
+    // O número 2 é o menor primo e único par (todos os demais número primos são impares);
+
+    int divisor, numero, contador;
+    contador = 1;
+
+    printf("Digite um número inteiro para verificar se ele é primo:");
+    scanf("%d", &numero);
+
+    for(divisor = 2; divisor <= numero ; divisor++ ){
+        if(numero % divisor == 0){
+            contador++;
+        }
+    }
+        if(contador == 2){
+            printf("\nEle é primo!\n");
+        }else{
+            printf("\nNão é um número primo\n");
+        }
+
+    return 0;
+}
